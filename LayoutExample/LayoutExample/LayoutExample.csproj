@@ -13,4 +13,9 @@
     <Compile Remove="StatcklayouEx1.cs" />
     <Compile Remove="MyPage.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="GridEx1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>
