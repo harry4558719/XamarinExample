@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LayoutExample.StacklayouVertical">
+    <ContentPage.Content>
+        <StackLayout Padding="40" Orientation="Vertical" Spacing="60" HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <Button Text="按鈕一" FontSize="32" BorderWidth="0" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="按鈕二" FontSize="32" BorderWidth="0" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="按鈕三" FontSize="32" BorderWidth="0" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="按鈕四" FontSize="32" BorderWidth="0" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="按鈕五" FontSize="32" BorderWidth="0" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="按鈕六" FontSize="32" BorderWidth="0" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

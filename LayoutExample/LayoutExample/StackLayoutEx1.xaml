@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LayoutExample.StackLayoutEx1">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+           
+            <StackLayout Orientation="Horizontal">
+                <BoxView BackgroundColor="Gray" Margin="5"/>
+                 <StackLayout Spacing="0" Margin="0,2,0,0">
+                     <Label Text="Harry" FontSize="18" TextColor="Black" FontAttributes="Bold"></Label>
+                     <Label Text="2小時" TextColor="Gray" ></Label>
+                 </StackLayout>
+            </StackLayout>
+            <BoxView HeightRequest="400" BackgroundColor="Black"/>
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="StartAndExpand">
+                <Label Text="讚"></Label>
+                <Label Text="留言"></Label>
+                <Label Text="分享"></Label>
+            </StackLayout>
+            <Label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla. Auctor augue mauris augue neque gravida in fermentum. Eleifend mi in nulla posuere. Vitae congue eu consequat ac felis donec et odio. In hac habitasse platea dictumst. Purus sit amet volutpat consequat. Arcu odio ut sem nulla pharetra diam sit amet. Sed velit dignissim sodales ut eu. Etiam erat velit scelerisque in dictum non consectetur a erat. Eu feugiat pretium nibh ipsum. Adipiscing bibendum est ultricies integer quis auctor. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Id eu nisl nunc mi ipsum. Viverra accumsan in nisl nisi scelerisque eu ultrices. Vitae purus faucibus ornare suspendisse sed. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices.
+
+Hendrerit dolor magna eget est lorem ipsum dolor sit. Egestas pretium aenean pharetra magna ac. Accumsan sit amet nulla facilisi morbi tempus iaculis urna. Id diam maecenas ultricies mi eget mauris. Sed blandit libero volutpat sed. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum. Faucibus nisl tincidunt eget nullam non nisi est sit amet. Duis at tellus at urna condimentum mattis. Ut faucibus pulvinar elementum integer enim neque volutpat. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Faucibus in ornare quam viverra orci sagittis. Nibh tellus molestie nunc non blandit massa enim nec. Tellus orci ac auctor augue mauris augue. Arcu bibendum at varius vel pharetra vel turpis. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Senectus et netus et malesuada fames. Commodo sed egestas egestas fringilla. Nec nam aliquam sem et tortor consequat.</Label>
+        </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>
