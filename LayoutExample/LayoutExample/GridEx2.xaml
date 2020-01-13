@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LayoutExample.GridEx2">
+    <ContentPage.Content>
+        <Grid ColumnSpacing="10" Padding="10">
+            <Grid.Resources>
+                <ResourceDictionary>
+                    <Style Class="num-btn" TargetType="Button">
+                        <Setter Property="FontSize" Value="48"/>
+                        <Setter Property="TextColor" Value="Black"/>
+                        <Setter Property="BackgroundColor" Value="#D7D7D7"/>
+                        <Setter Property="BorderColor" Value="Transparent"/>
+                       
+                    </Style>
+                </ResourceDictionary>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="123" FontSize="52" VerticalOptions="Center" HorizontalOptions="End"></Label>
+            <!--Row1-->
+            <Button Grid.Row="1" Grid.Column="0" Text="7" StyleClass="num-btn"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="8" StyleClass="num-btn"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="9" StyleClass="num-btn"/>
+            <Button Grid.Row="1" Grid.Column="3" Text="/" StyleClass="num-btn"/>
+            <!--Row2-->
+            <Button Grid.Row="2" Grid.Column="0" Text="4" StyleClass="num-btn"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="5" StyleClass="num-btn"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="6" StyleClass="num-btn"/>
+            <Button Grid.Row="2" Grid.Column="3" Text="X" StyleClass="num-btn"/>
+            <!--Row3-->
+             <Button Grid.Row="3" Grid.Column="0" Text="1" StyleClass="num-btn"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="2" StyleClass="num-btn"/>
+            <Button Grid.Row="3" Grid.Column="2" Text="3" StyleClass="num-btn"/>
+            <Button Grid.Row="3" Grid.Column="3" Text="-" StyleClass="num-btn"/>
+            <!--Row4-->
+            <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Text="0" StyleClass="num-btn"/>
+            <Button Grid.Row="4" Grid.Column="3" Text="+" StyleClass="num-btn"/>
+             <!--Row5-->
+            <Button Grid.Row="5" Grid.Column="0" Text="C" StyleClass="num-btn"/>
+            <Button Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Text="+" StyleClass="num-btn"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
