@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LayoutExample.RelativeLayoutEx1">
+    
+                <RelativeLayout>
+                    <BoxView
+                        RelativeLayout.WidthConstraint="{ConstraintExpression
+                        Type=RelativeToParent,
+                        Property=Width,
+                        Factor=1}" 
+                        HeightRequest="250"
+                        BackgroundColor="Black"
+                        Opacity="0.60"/>
+                    <!--Name & profile image!-->
+                 
+               
+                    <Button
+                        RelativeLayout.XConstraint="{ConstraintExpression
+                        Type=RelativeToParent,Property=Width, Factor=.5, Constant = -60}"
+                        RelativeLayout.YConstraint="{ConstraintExpression
+                        Type=RelativeToParent, Factor=0, Property=Y, Constant=190}"
+                        BorderRadius="60"
+                        x:Name="selfImg"
+                        BackgroundColor="Black"
+                        HeightRequest="120" WidthRequest="120"/>
+                    
+                    <Label
+                        RelativeLayout.YConstraint="{ConstraintExpression
+                        Type=RelativeToParent, Property=Y, Factor=0, Constant=320}"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression
+                        Type=RelativeToParent, Property=Width, Factor=1}"
+                        HorizontalTextAlignment="Center"
+                        HeightRequest="32"                             
+                        Text="Harry" TextColor="Black" FontSize="26"/>
+                  
+                    <Grid BackgroundColor="Black" ColumnSpacing="0" RelativeLayout.YConstraint="
+                        {ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=370}" HeightRequest="60" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
+                        <BoxView Grid.Column="0" Grid.Row="0" BackgroundColor="Blue"/>
+                        <BoxView Grid.Column="1" Grid.Row="0" BackgroundColor="Pink"/>
+                        <BoxView Grid.Column="2" Grid.Row="0" BackgroundColor="DarkGreen"/>
+                        <BoxView Grid.Column="3" Grid.Row="0" BackgroundColor="DarkRed"/>
+                    </Grid>
+                    <StackLayout RelativeLayout.YConstraint="{ConstraintExpression
+                        Type=RelativeToParent, Property=Y, Factor=0, Constant=460}"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression
+                        Type=RelativeToParent, Property=Width, Factor=1}">
+                       <Label
+                        HorizontalTextAlignment="Center"
+                                                   
+                         TextColor="Gray" FontSize="18">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla. Auctor augue mauris augue neque gravida in fermentum. Eleifend mi in nulla posuere. Vitae congue eu consequat ac felis donec et odio. In hac habitasse platea dictumst. Purus sit amet volutpat consequat. Arcu odio ut sem nulla pharetra diam sit amet. Sed velit dignissim sodales ut eu. Etiam erat velit scelerisque in dictum non consectetur a erat. Eu feugiat pretium nibh ipsum. Adipiscing bibendum est ultricies integer quis auctor. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Id eu nisl nunc mi ipsum. Viverra accumsan in nisl nisi scelerisque eu ultrices. Vitae purus faucibus ornare suspendisse sed. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices.
+                   </Label>
+                    </StackLayout>
+            
+                </RelativeLayout>
+</ContentPage>

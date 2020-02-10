@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LayoutExample.RelativeLayoutEx2">
+    <ContentPage.Content>
+        <RelativeLayout>
+            <BoxView 
+                     BackgroundColor="Red" WidthRequest="50" HeightRequest="50" />
+            <BoxView RelativeLayout.XConstraint="{ConstraintExpression Property=Width, Type=RelativeToParent,Factor=1,Constant=-50}"
+                     WidthRequest="50" HeightRequest="50"
+                     BackgroundColor="Gray"/>
+            <BoxView
+                        RelativeLayout.YConstraint="{ConstraintExpression
+                        Type=RelativeToParent,
+                        Property=Height,
+                        Factor=1,Constant=-50}" 
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        BackgroundColor="Green"
+                        />
+             <BoxView
+                        RelativeLayout.YConstraint="{ConstraintExpression
+                        Type=RelativeToParent,
+                        Property=Height,
+                        Factor=1,Constant=-50}"
+                        RelativeLayout.XConstraint="{ConstraintExpression
+                        Type=RelativeToParent,
+                        Property=Width,
+                        Factor=1,Constant=-50}" 
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        BackgroundColor="Peru"
+                        />
+        </RelativeLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
